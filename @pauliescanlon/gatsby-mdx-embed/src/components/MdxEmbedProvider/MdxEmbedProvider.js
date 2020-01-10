@@ -12,6 +12,7 @@ import { Flickr } from "../Flickr"
 import { SoundCloud } from "../SoundCloud"
 import { Gist } from "../Gist"
 import { Twitch } from "../Twitch"
+import { Chooser } from "../Dropbox"
 
 const components = {
   CodePen: props => <CodePen {...props} />,
@@ -25,6 +26,7 @@ const components = {
   SoundCloud: props => <SoundCloud {...props} />,
   Gist: props => <Gist {...props} />,
   Twitch: props => <Twitch {...props} />,
+  Chooser: props => <Chooser {...props} />,
 }
 
 export const MdxEmbedProvider = ({ children }) => (
