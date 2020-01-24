@@ -1,0 +1,38 @@
+---
+name: TwitterFollowButton
+menu: Components
+submenu: Twitter
+---
+
+import { Playground, Props } from 'docz'
+import { TwitterFollowButton } from '../../components/Twitter/'
+
+# TwitterFollowButton
+
+Display a TwitterFollowButton by including the component in your `.mdx`. The `username` prop is required.
+
+<Props of={TwitterFollowButton} />
+
+## Basic usage
+
+<Playground>
+  <TwitterFollowButton username="PaulieScanlon" />
+</Playground>
+
+## Show followers
+
+<Playground>
+  <TwitterFollowButton username="gatsbyjs" showFollowers={true} />
+</Playground>
+
+## Show username
+
+<Playground>
+  <TwitterFollowButton username="PaulieScanlon" showUsername={false} />
+</Playground>
+
+## Size
+
+<Playground>
+  <TwitterFollowButton username="PaulieScanlon" size="large" />
+</Playground>

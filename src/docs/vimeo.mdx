@@ -1,0 +1,25 @@
+---
+name: Vimeo
+menu: Components
+---
+
+import { Playground, Props } from 'docz'
+import { Vimeo } from '../components/Vimeo/'
+
+# Vimeo
+
+Display a Vimeo video by including the component in your `.mdx`. The `vimeoId` prop is required.
+
+<Props of={Vimeo} />
+
+## Basic usage
+
+<Playground>
+  <Vimeo vimeoId="38445453" />
+</Playground>
+
+## Skip to
+
+<Playground>
+  <Vimeo vimeoId="38445453" skipTo={{ h: 0, m: 1, s: 15 }} />
+</Playground>

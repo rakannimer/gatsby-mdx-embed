@@ -1,0 +1,26 @@
+---
+name: TwitterHashtagButton
+menu: Components
+submenu: Twitter
+---
+
+import { Playground, Props } from 'docz'
+import { TwitterHashtagButton } from '../../components/Twitter/'
+
+# TwitterHashtagButton
+
+Display a TwitterHashtagButton by including the component in your `.mdx`. The `hashtag` prop is required.
+
+<Props of={TwitterHashtagButton} />
+
+## Basic usage
+
+<Playground>
+  <TwitterHashtagButton hashtag="#100DaysOfGatsby" />
+</Playground>
+
+## Size
+
+<Playground>
+  <TwitterHashtagButton hashtag="#100DaysOfGatsby" size="large" />
+</Playground>
